@@ -10,7 +10,7 @@ export default class JSONservice {
         if (this.status === 200) {
           resolve(response);
         } else {
-          reject(response);
+          reject({message: "no good!", code: 404});
         }
       })
     })
